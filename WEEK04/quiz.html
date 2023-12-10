@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="/action_page.php" class="was-validated">
+        <div class="col-md-5">
+          <label for="validationServer04" class="form-label"
+            >คณะ / สาขาวิชาที่เลือกเข้าศึกษา</label
+          ><span class="text-danger">*</span>
+          <select class="form-select is-valid" required>
+            <option value="">เลือก...</option>
+            <option value="15311000001">
+              คณะครุศาสตร์ | สาขาวิชาการศึกษาปฐมวัย (ค.บ.)
+            </option>
+            <option value="15311000002">
+              คณะครุศาสตร์ | สาขาวิชาคณิตศาสตร์ (ค.บ.)
+            </option>
+            <option value="15311000005">
+              คณะครุศาสตร์ | สาขาวิชาภาษาอังกฤษ (ค.บ.)
+            </option>
+            <option value="15311000006">
+              คณะครุศาสตร์ | สาขาวิชาภาษาจีน (ค.บ.)
+            </option>
+            <option value="15311000007"></option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            กรุณากรอกข้อมูลให้ครบถ้วน
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for="validationServer04" class="form-label">สัญชาติ</label
+            ><span class="text-danger">*</span>
+            <select class="form-select is-valid" required>
+              <option value="">เลือก...</option>
+              <option value="1">คนไทย</option>
+              <option value="2">ต่างชาติ</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer04" class="form-label">เพศ</label
+            ><span class="text-danger">*</span>
+            <select class="form-select is-valid" required>
+              <option value="">เลือก...</option>
+              <option value="1">ชาย</option>
+              <option value="2">หญิง</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for="validationServer01" class="form-label"
+              >คำนำหน้าชื่อ</label
+            ><span class="text-danger">*(ชื่อเต็ม)</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label">ชื่อ</label
+            ><span class="text-danger">*</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label">นามสกุล</label
+            ><span class="text-danger">*</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >บัตรประชาชน</label
+            ><span class="text-danger">*</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >เบอร์โทรศัพท์ </label
+            ><span class="text-danger">*</span>
+            <input type="tel" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label">อีเมล</label
+            ><span class="text-danger">*</span>
+            <input type="email" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >ID Line (ถ้ามี)</label
+            >
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >Facebook (ถ้ามี)
+            </label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >สาขา / สายวิชาที่เรียน</label
+            ><span class="text-danger">*</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer03" class="form-label"
+              >คะแนนเฉลี่ย (GPAX)</label
+            ><span class="text-danger">*</span>
+            <input type="text" class="form-control is-valid" required />
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for="validationServer04" class="form-label"
+              >มีความต้องการกู้ยืมเพื่อการศึกษา</label
+            ><span class="text-danger">*</span>
+            <select class="form-select is-valid" required>
+              <option value="">เลือก...</option>
+              <option value="1">ต้องการกู้</option>
+              <option value="2">ไม่ต้องการกู้</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+              กรุณากรอกข้อมูลให้ครบถ้วน
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3"></div>
+        <button class="btn btn-primary" type="submit">ยืนยัน</button>
+        <button type="button" class="btn btn-danger">ยกเลิก</button>
+      </form>
+    </div>
+  </body>
+</html>
