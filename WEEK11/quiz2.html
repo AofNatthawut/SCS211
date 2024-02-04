@@ -1,0 +1,44 @@
+<body>
+  <button onclick="getPeople();">รายชื่อ</button>
+  <div id="content"></div>
+  <script>
+    async function getPeople() {
+      //basic function style
+      try {
+        let promise = await fetch(
+          "https://raw.githubusercontent.com/arc6828/SCS211/main/week13/staff.json"
+        );
+        let people_object = await promise.json();
+        console.log("success:", people_object);
+        let people = people_object.people;
+        let contentDiv = document.querySelector("#content");
+        for (let item of people) {
+          console.log(item);
+          let newDiv = document.createElement("div");
+          newDiv.innerHTML =
+            "<strong>Name: </strong>" +
+            item.name +
+            "<br>" +
+            "<strong>Education: </strong>" +
+            item.education +
+            " | " +
+            "<strong>Role: </strong>" +
+            item.role +
+            "<br>" +
+            "<strong>Email: </strong>" +
+            // เปลี่ยน email เป็นลิงก์
+            `<strong>Email: </strong><a href="mailto:${item.email}">${item.email}</a> | ` +
+            " | " +
+            "<strong>Phone: </strong>" +
+            item.phone +
+            "<br>" +
+            // เปลี่ยนเป็น element img และกำหนด src จาก item.image
+            `<img src="${item.image}" alt="${item.name}'s Image" style="width: 90px; height: auto; margin-bottom: 1em;"><hr>`;
+          contentDiv.appendChild(newDiv);
+        }
+      } catch (error) {
+        console.log("fail", error);
+      }
+    }
+  </script>
+</body>
